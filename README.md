@@ -1,1 +1,1 @@
-# JSCL
+# Java Standard Code Library
