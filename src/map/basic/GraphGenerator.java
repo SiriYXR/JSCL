@@ -1,4 +1,4 @@
-package map;
+package map.basic;
 
 
 public class GraphGenerator {
