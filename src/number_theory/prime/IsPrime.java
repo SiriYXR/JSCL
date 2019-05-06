@@ -1,8 +1,9 @@
-package number_theory;
+package number_theory.prime;
 
-public class Prime {
+public class IsPrime {
 
     public static void main(String[] args) {
+
         System.out.println(isPrime(2));
     }
 
