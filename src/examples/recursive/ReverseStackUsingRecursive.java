@@ -1,4 +1,4 @@
-package linear_table_and_matrix;
+package examples.recursive;
 
 import java.util.Stack;
 
