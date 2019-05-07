@@ -24,6 +24,6 @@ hs_err_pid*
 
 #custom
 doc/~$JSCL.docx
-out
-.idea
+out/
+.idea/
 JSCL.iml
