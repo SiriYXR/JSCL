@@ -68,9 +68,7 @@ public class UnionSet {
                     fatherMap.put(bHead, aHead);
                     sizeMap.put(aHead, aSetSize + bSetSize);
                 }
-
             }
-
         }
     }
 }
