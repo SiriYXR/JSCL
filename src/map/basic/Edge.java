@@ -1,12 +1,12 @@
 package map.basic;
 
 public class Edge {
-    public int value;
+    public int weight;
     public Node from;
     public Node to;
 
-    public Edge(int value, Node from, Node to) {
-        this.value = value;
+    public Edge(int weight, Node from, Node to) {
+        this.weight = weight;
         this.from = from;
         this.to = to;
     }
