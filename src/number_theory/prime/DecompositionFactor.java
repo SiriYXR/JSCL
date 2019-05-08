@@ -1,4 +1,4 @@
-package linear_table_and_matrix;
+package number_theory.prime;
 
 public class DecompositionFactor {
 
