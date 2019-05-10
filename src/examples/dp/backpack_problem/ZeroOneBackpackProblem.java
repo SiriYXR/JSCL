@@ -1,5 +1,7 @@
 package examples.dp.backpack_problem;
 
+import java.util.Arrays;
+
 public class ZeroOneBackpackProblem {
 
     public static void main(String[] agrs) {
@@ -22,6 +24,10 @@ public class ZeroOneBackpackProblem {
         init(0);//dp初始化为0
         zeroOne2();
         System.out.println(dp[0][W]);
+
+        Arrays.fill(dp2,0);
+        zeroOne3();
+        System.out.println(dp2[W]);
     }
 
     public static int MAX_N = 100;//物品个数
@@ -71,6 +77,17 @@ public class ZeroOneBackpackProblem {
                 } else {
                     dp[i][j] = Math.max(dp[i + 1][j], dp[i + 1][j - w[i]] + v[i]);
                 }
+            }
+        }
+    }
+
+    //dp方法2，只用一维数组
+    public static int[] dp2 = new int[MAX_N + 1];
+
+    public static void zeroOne3() {
+        for (int i = 0; i < n; i++) {
+            for (int j = W; j >= w[i]; j--) {
+                dp2[j] = Math.max(dp2[j], dp2[j - w[i]] + v[i]);
             }
         }
     }
